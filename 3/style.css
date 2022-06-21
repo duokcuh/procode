@@ -1,6 +1,6 @@
 .aside-btn {
   box-shadow: 5px 5px 6px 0 rgba(0,0,0,0.75);
-  border-radius: 5px;
+  border-radius: 10px;
 }
 .aside-btn:hover,
 #form-button:focus {
@@ -16,9 +16,7 @@
 }
 
 #main-field {
-  /*height: 400px;*/
   max-height: 90vh;
-
   display: grid;
   grid-gap: 3px;
   grid-auto-flow: row;
