@@ -16,32 +16,28 @@
     <aside class="col-3 d-flex flex-column justify-content-between">
       <div id="arrows" class="d-flex flex-wrap justify-content-center my-3 text-center">
         <div class="p-1 w-100">
-          <svg id="up" xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="currentColor" class="aside-btn bi bi-arrow-up-square-fill" viewBox="0 0 16 16">
+          <svg id="up" xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="currentColor" class="arrow-btn bi bi-arrow-up-square-fill" viewBox="0 0 16 16">
             <path d="M2 16a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2zm6.5-4.5V5.707l2.146 2.147a.5.5 0 0 0 .708-.708l-3-3a.5.5 0 0 0-.708 0l-3 3a.5.5 0 1 0 .708.708L7.5 5.707V11.5a.5.5 0 0 0 1 0z" />
           </svg>
         </div>
         <div class="p-1">
-          <svg id="left" xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="currentColor" class="aside-btn bi bi-arrow-left-square-fill" viewBox="0 0 16 16">
+          <svg id="left" xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="currentColor" class="arrow-btn bi bi-arrow-left-square-fill" viewBox="0 0 16 16">
             <path d="M16 14a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12zm-4.5-6.5H5.707l2.147-2.146a.5.5 0 1 0-.708-.708l-3 3a.5.5 0 0 0 0 .708l3 3a.5.5 0 0 0 .708-.708L5.707 8.5H11.5a.5.5 0 0 0 0-1z"/>
           </svg>
         </div>
-        <div class="p-1">
-          <svg id="down" xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="currentColor" class="aside-btn bi bi-arrow-down-square-fill" viewBox="0 0 16 16">
+        <div class="p-1 order-last">
+          <svg id="down" xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="currentColor" class="arrow-btn bi bi-arrow-down-square-fill" viewBox="0 0 16 16">
             <path d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2zm6.5 4.5v5.793l2.146-2.147a.5.5 0 0 1 .708.708l-3 3a.5.5 0 0 1-.708 0l-3-3a.5.5 0 1 1 .708-.708L7.5 10.293V4.5a.5.5 0 0 1 1 0z"/>
           </svg>
         </div>
-        <div class="p-1">
-          <svg id="right" xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="currentColor" class="aside-btn bi bi-arrow-right-square-fill" viewBox="0 0 16 16">
+        <div class="p-1 order-lg-last">
+          <svg id="right" xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="currentColor" class="arrow-btn bi bi-arrow-right-square-fill" viewBox="0 0 16 16">
             <path d="M0 14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2a2 2 0 0 0-2 2v12zm4.5-6.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5a.5.5 0 0 1 0-1z"/>
           </svg>
         </div>
       </div>
   
       <form name="settings">
-        <div class="form-floating mb-3">
-          <input type="number" min="4" max="75" class="form-control" id="obstacles" name="obstacles" placeholder="Enter obstacles quantity" required>
-          <label for="obstacles">Number of obstacles</label>
-        </div>
         <div class="form-floating mb-3">
           <input type="number" min="4" max="10" class="form-control" id="height" name="height" placeholder="Enter field height" required>
           <label for="height">Field height, cells</label>
@@ -50,7 +46,11 @@
           <input type="number" min="4" max="15" class="form-control" id="width" name="width" placeholder="Enter field width" required>
           <label for="width">Field width, cells</label>
         </div>
-        <button id="form-button" class="aside-btn btn btn-dark w-100 mb-3 border-0" type="submit">Generate</button>
+        <div class="form-floating mb-3">
+          <input type="number" min="4" max="75" class="form-control" id="obstacles" name="obstacles" placeholder="Enter obstacles quantity" required>
+          <label for="obstacles">Number of obstacles</label>
+        </div>
+        <button id="form-button" class="btn btn-dark w-100 mb-3 border-0" type="submit">Generate</button>
       </form>
     </aside>
     

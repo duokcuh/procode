@@ -1,13 +1,12 @@
-.aside-btn {
+.arrow-btn, #form-button {
   box-shadow: 5px 5px 6px 0 rgba(0,0,0,0.75);
   border-radius: 10px;
 }
-.aside-btn:hover,
-#form-button:focus {
+.arrow-btn:hover, #form-button:focus {
   box-shadow: 2px 2px 6px 0 rgba(0,0,0,0.75);
 }
 
-.bi:hover {
+.arrow-btn:hover {
   color: #0281FD;
 }
 
@@ -16,6 +15,7 @@
 }
 
 #main-field {
+  align-self: flex-end;
   max-height: 90vh;
   display: grid;
   grid-gap: 3px;
