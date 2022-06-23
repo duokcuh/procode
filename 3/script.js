@@ -4,7 +4,7 @@ const arrows = document.getElementById('arrows');
 const settings = document.forms['settings'];
 // const inputHeight = document.getElementById('height');
 // const inputWidth = document.getElementById('width');
-// const inputObs = document.getElementById('obstacles');
+const inputObs = document.getElementById('obstacles');
 
 let active = {};
 let cells = [];
@@ -110,7 +110,7 @@ settings.onsubmit = e => {
   obstacles = +data.get('obstacles');
   if (obstacles > fieldWidth * fieldHeight / 2) {
     obstacles = Math.floor(fieldWidth * fieldHeight / 2);
-    settings[0].value = obstacles;
+    inputObs.value = obstacles;
   }
   setCells();
 }
